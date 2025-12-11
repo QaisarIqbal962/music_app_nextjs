@@ -1,5 +1,7 @@
 import FeaturedSection from "@/components/FeaturedSection";
 import HeroSection from "@/components/HeroSection";
+import Testimonial from "@/components/Testimonial";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
       <main className="min-h-screen bg-black/96 antialiased bg-grid-white/[0.02]">
       <HeroSection/>
       <FeaturedSection/>
+      <WhyChooseUs/>
+      <Testimonial/>
     </main>
   );
 }

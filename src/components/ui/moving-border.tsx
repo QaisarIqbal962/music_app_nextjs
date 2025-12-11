@@ -140,5 +140,4 @@ const progress = useMotionValue<number>(0);
 };
 
 
-// lecture 3 time 18:2
 
