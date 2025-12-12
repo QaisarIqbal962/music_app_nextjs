@@ -5,7 +5,9 @@ function Instructors() {
   return (
     <div className="text-white relative h-160 overflow-hidden flex items-center justify-center">
         
-        <WavyBackground/>
+        <WavyBackground>
+            
+        </WavyBackground>
 
     </div>
   );
