@@ -99,7 +99,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* ✅ Professional Popup */}
       {showPopup && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60  px-4">
           <div className="bg-gray-900 border border-gray-700 rounded-2xl shadow-2xl max-w-md w-full p-8 text-center animate-fade-in">
@@ -112,24 +111,21 @@ export default function ContactPage() {
               get back to you shortly.
             </p>
 
-           <div className="flex gap-4 mt-6">
-  <button
-    onClick={() => setShowPopup(false)}
-    className="flex-1 h-12 bg-linear-to-r from-blue-600 to-purple-600 cursor-pointer hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition"
-  >
-    Close
-  </button>
+            <div className="flex gap-4 mt-6">
+              <button
+                onClick={() => setShowPopup(false)}
+                className="flex-1 h-12 bg-linear-to-r from-blue-600 to-purple-600 cursor-pointer hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition"
+              >
+                Close
+              </button>
 
-  <button
-    onClick={() => router.push("/")}
-    className="flex-1 h-12 bg-linear-to-r from-blue-600 to-purple-600 cursor-pointer hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition"
-  >
-    Back to Home
-  </button>
-</div>
-
-
-          
+              <button
+                onClick={() => router.push("/")}
+                className="flex-1 h-12 bg-linear-to-r from-blue-600 to-purple-600 cursor-pointer hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition"
+              >
+                Back to Home
+              </button>
+            </div>
           </div>
         </div>
       )}
